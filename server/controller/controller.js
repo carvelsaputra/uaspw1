@@ -1,4 +1,4 @@
-const DataMhs = require('./model');
+const DataMhs = require('../model/model');
 
 exports.getAllData = (req, res, next) => {
     DataMhs.getAll(datamhs =>{
