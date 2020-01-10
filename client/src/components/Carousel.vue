@@ -1,51 +1,68 @@
 <template>
-   <v-carousel
-    cycle
-    height="400"
-    hide-delimiter-background
-    show-arrows-on-hover
-  >
-    <v-carousel-item
-      v-for="(slide, i) in slides"
-      :key="i"
+    <v-carousel
+            cycle
+            height="400"
+            hide-delimiter-background
+            show-arrows-on-hover
     >
-      <v-sheet
-        :color="colors[i]"
-        height="100%"
-      >
-        <v-row
-          class="fill-height"
-          align="center"
-          justify="center"
+        <v-carousel-item
+                v-for="(slide, i) in slides"
+                :key="i"
         >
-          <div class="display-3">{{ slide }}</div>
-        </v-row>
-      </v-sheet>
-    </v-carousel-item>
-  </v-carousel>
+            <v-sheet
+                    :color="colors[i]"
+                    height="100%"
+            >
+                <v-row
+                        class="fill-height"
+                        align="center"
+                        justify="center"
+                >
+                    <div class="display-3">{{ slide }}</div>
+                </v-row>
+            </v-sheet>
+        </v-carousel-item>
+    </v-carousel>
+
+
 </template>
 <script>
- export default {
-     name:'Carousel',
-    data () {
-      return {
-        colors: [
-          'indigo',
-          'warning',
-          'pink darken-2',
-          'red lighten-1',
-          'deep-purple accent-4',
-          'primary'
-        ],
-        slides: [
-          'Carvel Saputra Martaloho',
-          'Jonathan Tanuwijaya',
-          'Edward Agustria',
-          'Ricky Yohannes',
-          'Richardo Anggara',
-          'Refaldy Bagas Riyanto'
-        ],
-      }
-    },
-  }
+    import axios from 'axios'
+
+    export default {
+        name: 'Carousel',
+        data() {
+            return {
+                colors: [
+                    'indigo',
+                    'warning',
+                    'pink darken-2',
+                    'red lighten-1',
+                    'deep-purple accent-4',
+                    'primary'
+                ],
+                mahasiswa: [],
+                // slides: this.mahasiswa.nama
+                slides: [
+                    'Carvel Saputra Martaloho',
+                    'Jonathan Tanuwijaya',
+                    'Edward Agustria',
+                    'Ricky Yohannes',
+                    'Richardo Anggara',
+                    'Refaldy Bagas Riyanto'
+                ],
+            }
+        },
+        mounted() {
+            axios
+                .get('http:localhost:8081/')
+                .then(res => {
+                        this.mahasiswa = res.data.mahasiswa
+                    }
+                )
+
+
+        }
+    }
+
 </script>
