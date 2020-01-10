@@ -6,7 +6,7 @@
             show-arrows-on-hover
     >
         <v-carousel-item
-                v-for="(slide, i) in slides"
+                v-for="(slidemhs, i) in mahasiswa"
                 :key="i"
         >
             <v-sheet
@@ -18,7 +18,7 @@
                         align="center"
                         justify="center"
                 >
-                    <div class="display-3">{{ slide }}</div>
+                    <div class="display-3">{{ slidemhs.nama }}</div>
                 </v-row>
             </v-sheet>
         </v-carousel-item>
@@ -42,25 +42,26 @@
                     'primary'
                 ],
                 mahasiswa: [],
-                // slides: this.mahasiswa.nama
-                slides: [
-                    'Carvel Saputra Martaloho',
-                    'Jonathan Tanuwijaya',
-                    'Edward Agustria',
-                    'Ricky Yohannes',
-                    'Richardo Anggara',
-                    'Refaldy Bagas Riyanto'
-                ],
+                // slides: [
+                //     'Carvel Saputra Martaloho',
+                //     'Jonathan Tanuwijaya',
+                //     'Edward Agustria',
+                //     'Ricky Yohannes',
+                //     'Richardo Anggara',
+                //     'Refaldy Bagas Riyanto'
+                // ],
             }
         },
-        mounted() {
+        created() {
             axios
-                .get('http:localhost:8081/')
+                .get("http://localhost:8081/")
                 .then(res => {
-                        this.mahasiswa = res.data.mahasiswa
+                        this.mahasiswa = res.data;
+                        console.log(res.data)
                     }
-                )
-
+                ).catch(error => {
+                console.log(error)
+            })
 
         }
     }
