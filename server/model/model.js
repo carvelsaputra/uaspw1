@@ -18,15 +18,8 @@ const getDataFromFile = cb => {
     });
 };
 
-module.exports = class DataMhs {
-    constructor(nama, npm, desc, urlPhoto) {
-        this.nama = nama;
-        this.npm = npm;
-        this.desc = desc;
-        this.urlPhoto = urlPhoto;
-    }
-
-    static getAll(cb) {
+module.exports = {
+    getAll(cb) {
         getDataFromFile(cb);
     }
 

@@ -42,14 +42,6 @@
                     'primary'
                 ],
                 mahasiswa: [],
-                // slides: [
-                //     'Carvel Saputra Martaloho',
-                //     'Jonathan Tanuwijaya',
-                //     'Edward Agustria',
-                //     'Ricky Yohannes',
-                //     'Richardo Anggara',
-                //     'Refaldy Bagas Riyanto'
-                // ],
             }
         },
         created() {
