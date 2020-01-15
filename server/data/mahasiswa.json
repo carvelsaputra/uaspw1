@@ -1,38 +1,50 @@
 [
   {
+    "id": 1,
     "nama": "Carvel Saputra Marthaloho",
     "npm": "1822250008",
-    "desc": "Saya Carvel",
-    "urlPhoto": "no data"
+    "desc": "Halo, saya Carvel Saputra Martaloho prodi TI angkatan 2018.. saya lahir di Palembang, SD di Xaverius 4, SMP Xaverius Maria, dan SMA di Xaverius 3",
+    "urlPhoto": "../../../server/data/profile/bagas.jpeg",
+    "urlIG": "https://www.instagram.com/carvel.saputra/"
   },
   {
+    "id": 2,
     "nama": "Jonathan Tanuwijaya",
     "npm": "1822250010",
     "desc": "Saya Jonathan",
-    "urlPhoto": "no data"
+    "urlPhoto": "../../../server/data/profile/bagas.jpeg",
+    "urlIG": "https://www.instagram.com/carvel.saputra/"
   },
   {
+    "id": 3,
     "nama": "Edward Agustria",
     "npm": "1822250021",
     "desc": "Saya edward",
-    "urlPhoto": "no data"
+    "urlPhoto":"../../../server/data/profile/titi.jpeg",
+    "urlIG": "https://www.instagram.com/carvel.saputra/"
   },
   {
+    "id": 4,
     "nama": "Ricky Yohannes",
     "npm": "1822250028",
     "desc": "Saya Ricky",
-    "urlPhoto": "no data"
+    "urlPhoto": "../../../server/data/profile/ricky.jpeg",
+    "urlIG": "https://www.instagram.com/carvel.saputra/"
   },
   {
+    "id": 5,
     "nama": "Richardo Anggara",
     "npm": "1822250030",
     "desc": "Saya Richardo",
-    "urlPhoto": "no data"
+    "urlPhoto": "../../../server/data/profile/dodo.jpeg",
+    "urlIG": "https://www.instagram.com/carvel.saputra/"
   },
   {
+    "id": 6,
     "nama": "Refaldy Bagas Riyanto",
     "npm": "1822250008",
     "desc": "Saya Refalddy",
-    "urlPhoto": "no data"
+    "urlPhoto": "../../../server/data/profile/bagas.jpeg",
+    "urlIG": "https://www.instagram.com/carvel.saputra/"
   }
 ]
