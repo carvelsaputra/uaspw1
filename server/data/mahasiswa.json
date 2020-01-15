@@ -4,7 +4,7 @@
     "nama": "Carvel Saputra Marthaloho",
     "npm": "1822250008",
     "desc": "Halo, saya Carvel Saputra Martaloho prodi TI angkatan 2018.. saya lahir di Palembang, SD di Xaverius 4, SMP Xaverius Maria, dan SMA di Xaverius 3",
-    "urlPhoto": "../../../server/data/profile/bagas.jpeg",
+    "urlPhoto": "../assets/profile/bagas.jpeg",
     "urlIG": "https://www.instagram.com/carvel.saputra/"
   },
   {
@@ -12,7 +12,7 @@
     "nama": "Jonathan Tanuwijaya",
     "npm": "1822250010",
     "desc": "Saya Jonathan",
-    "urlPhoto": "../../../server/data/profile/bagas.jpeg",
+    "urlPhoto": "../assets/profile/bagas.jpeg",
     "urlIG": "https://www.instagram.com/carvel.saputra/"
   },
   {
@@ -20,7 +20,7 @@
     "nama": "Edward Agustria",
     "npm": "1822250021",
     "desc": "Saya edward",
-    "urlPhoto":"../../../server/data/profile/titi.jpeg",
+    "urlPhoto":"../assets/profile/titi.jpeg",
     "urlIG": "https://www.instagram.com/carvel.saputra/"
   },
   {
@@ -28,7 +28,7 @@
     "nama": "Ricky Yohannes",
     "npm": "1822250028",
     "desc": "Saya Ricky",
-    "urlPhoto": "../../../server/data/profile/ricky.jpeg",
+    "urlPhoto": "../assets/profile/ricky.jpeg",
     "urlIG": "https://www.instagram.com/carvel.saputra/"
   },
   {
