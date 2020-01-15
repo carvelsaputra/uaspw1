@@ -15,7 +15,7 @@
                 <v-row>
                   <!-- kolom kiri -->
                   <v-col cols="4">
-                    <v-img height="300" width="200" :src="item.foto" ></v-img>
+                    <v-img class="img-profile" height="300" width="250" :src="item.foto"></v-img>
                   </v-col>
                   <!-- kolom kanan -->
                   <v-col>
@@ -40,8 +40,8 @@
                    <p>
                      {{item.desc}}
                    </p>
-                   <v-footer class="rounded-card" color="green accent-1">
-                     <p class="title" style="color:#00E676">Social Media : </p>
+                   <v-footer class="v-footer rounded-card" style="float: right;margin-top:auto;height:20%;">
+                    <p class="pa-1 socmed">Social Media :</p>
                      <v-btn 
                      v-for="(icon,i) in icons"
                      :key="i"
@@ -49,8 +49,8 @@
                      class="mx-4">
                      
                       <v-img width="30px" 
-                      :src="icon.icon" class="mx-4"></v-img>
-                      <v-divider  vertical ></v-divider>
+                      :src="icon.icon" class="icon-btn mx-3"></v-img>
+                      <!-- <v-divider  vertical ></v-divider> -->
                      </v-btn>
                    </v-footer>
                   </v-col>
@@ -72,7 +72,7 @@ export default {
               nama:"Carvel Saputra Martaloho",
               npm:"1822250008",
               foto:require("../assets/profile/CarvelSaputraMartaLoho.jpg"),
-              desc:"Halo, saya Carvel Saputra Martaloho prodi TI angkatan 2018.. saya lahir di Palembang, SD di Xaverius 4, SMP Xaverius Maria, dan SMA di Xaverius 3",
+              desc:"Halo, saya Carvel Saputra Martaloho prodi TI angkatan 2018.. saya lahir di Palembang, SD di Xaverius 4, SMP Xaverius Maria, dan SMA di Xaverius 3 dan sekarang sedang masa kuliah di MDP Palembang.",
               colors:'#3F51B5'
 
             },
@@ -139,18 +139,30 @@ export default {
 {
   color:white;
 }
+.img-profile{
+       border-radius: 8px;
+}
+.icon-btn{
+  margin-top: -15px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 7px;
+}
+.socmed
+{
+    color:black;
+    font-family: "Century Gothic";
+}
 .content-1
 {
-  background-color: purple
+  background-color: #8500cc
 }
 .rounded-card
 {
-    border-radius:10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 10px;
+    padding: 20px;
 }
-/* #tes
-{
-  background-color: #1976D2
-} */
+
 
 
 </style>
