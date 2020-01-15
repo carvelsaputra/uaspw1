@@ -10,7 +10,6 @@
               v-for="(item,i) in items"
               :key="i"
             >
-            
               <v-col id="tes">
                 <v-row>
                   <!-- kolom kiri -->
@@ -18,7 +17,7 @@
                     <v-img height="300" width="200" :src="item.foto" ></v-img>
                   </v-col>
                   <!-- kolom kanan -->
-                  <v-col id="tesss">
+                  <v-col>
                     <v-row>
                       <v-col cols="2">
                         <p class="headline">Nama  </p>
@@ -53,7 +52,6 @@
                   </v-col>
                 </v-row>
               </v-col>
-              
             </v-card>
            </v-row>
            
@@ -67,18 +65,40 @@ export default {
     data:()=>({
         items:[
             {
-                nama:"Carvel Saputra Martaloho",
-                npm:"1822250008",
-                foto:require("../assets/CarvelSaputraMartaLoho.jpg"),
-                desc:"Halo, saya Carvel Saputra Martaloho prodi TI angkatan 2018.. saya lahir di Palembang, SD di Xaverius 4, SMP Xaverius Maria, dan SMA di Xaverius 3"
+              nama:"Carvel Saputra Martaloho",
+              npm:"1822250008",
+              foto:require("../assets/profile/CarvelSaputraMartaLoho.jpg"),
+              desc:"Halo, saya Carvel Saputra Martaloho prodi TI angkatan 2018.. saya lahir di Palembang, SD di Xaverius 4, SMP Xaverius Maria, dan SMA di Xaverius 3"
             },
             {
               nama:"Jonathan Tanuwijaya",
               npm:"1822250010",
               foto:require("../assets/logo.png")
+            },
+             {
+              nama:"Edward Agustria",
+              npm:"1822250010",
+              foto:require("../assets/profile/titi.jpeg")
+            },
+            {
+              nama:"Ricky Yohannes",
+              npm:"1822250010",
+              foto:require("../assets/profile/ricky.jpeg")
+            },
+            {
+              nama:"Richardo Anggara",
+              npm:"1822250010",
+              foto:require("../assets/profile/dodo.jpeg")
+            },
+            {
+              nama:"Refaldy Bagas Riyanto",
+              npm:"1822250010",
+              foto:require("../assets/profile/bagas.jpeg")
             }
+
         ],
-        icons:[
+        icons:
+        [
           {
             icon:require("../assets/sosmed/instagram.png")
           },
@@ -107,8 +127,6 @@ export default {
 #tes{
   background-color: #1976D2
 }
-#tess{
-  background-color: black
-}
+
 
 </style>

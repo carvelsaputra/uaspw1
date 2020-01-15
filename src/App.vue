@@ -39,9 +39,8 @@ export default {
   background:url('./assets/background/wp2778609-polygonal-wallpapers.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-   height: 100%;
+   height: 77%;
    width:100%;
-
 }
 
 </style>
