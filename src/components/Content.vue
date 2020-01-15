@@ -7,10 +7,11 @@
               outlined
               tile
               center
-              v-for="(item,i) in items"
-              :key="i"
+              v-for="(item,id) in items"
+              :key="id"
             >
-              <v-col id="tes">
+
+              <v-col id="tes" v-bind:style="{color:colorCard}">
                 <v-row>
                   <!-- kolom kiri -->
                   <v-col cols="4">
@@ -39,14 +40,17 @@
                    <p>
                      {{item.desc}}
                    </p>
-                   <v-footer>
+                   <v-footer class="rounded-card" color="green accent-1">
+                     <p class="title" style="color:#00E676">Social Media : </p>
                      <v-btn 
                      v-for="(icon,i) in icons"
                      :key="i"
                      icon
                      class="mx-4">
-                      <v-img width="24px" 
-                      :src="icon.icon"></v-img>
+                     
+                      <v-img width="30px" 
+                      :src="icon.icon" class="mx-4"></v-img>
+                      <v-divider  vertical ></v-divider>
                      </v-btn>
                    </v-footer>
                   </v-col>
@@ -60,37 +64,43 @@
 <script>
 
 export default {
-
     name:'Content',
     data:()=>({
-        items:[
+        items:
+        [
             {
+              id:1,
               nama:"Carvel Saputra Martaloho",
               npm:"1822250008",
               foto:require("../assets/profile/CarvelSaputraMartaLoho.jpg"),
               desc:"Halo, saya Carvel Saputra Martaloho prodi TI angkatan 2018.. saya lahir di Palembang, SD di Xaverius 4, SMP Xaverius Maria, dan SMA di Xaverius 3"
             },
             {
+              id:2,
               nama:"Jonathan Tanuwijaya",
               npm:"1822250010",
               foto:require("../assets/logo.png")
             },
-             {
+            {
+              id:3,
               nama:"Edward Agustria",
               npm:"1822250010",
               foto:require("../assets/profile/titi.jpeg")
             },
             {
+              id:4,
               nama:"Ricky Yohannes",
               npm:"1822250010",
               foto:require("../assets/profile/ricky.jpeg")
             },
             {
+              id:5,
               nama:"Richardo Anggara",
               npm:"1822250010",
               foto:require("../assets/profile/dodo.jpeg")
             },
             {
+              id:6,
               nama:"Refaldy Bagas Riyanto",
               npm:"1822250010",
               foto:require("../assets/profile/bagas.jpeg")
@@ -106,7 +116,8 @@ export default {
             icon:require("../assets/sosmed/facebook.png")
           }
 
-        ]
+        ],
+      
           
         
 
@@ -114,17 +125,20 @@ export default {
 }
 </script>
 <style  scoped>
-*{
+*
+{
   color:white;
 }
 .content-1
 {
   background-color: purple
 }
-.rounded-card{
+.rounded-card
+{
     border-radius:10px;
 }
-#tes{
+#tes
+{
   background-color: #1976D2
 }
 
