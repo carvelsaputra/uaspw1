@@ -3,7 +3,7 @@
         <v-row>
             <v-card
                     width="100%"
-                    class="ma-3 pa-6 rounded-card "
+                    class="ma-3 pa-5 rounded-card "
                     outlined
                     tile
                     center
@@ -14,7 +14,7 @@
                     <v-row>
                         <!-- kolom kiri -->
                         <v-col cols="4">
-                            <v-img height="300" width="200" :src="item.foto"></v-img>
+                            <v-img class="img-profile" height="300" width="200" :src="item.foto"></v-img>
                         </v-col>
                         <!-- kolom kanan -->
                         <v-col>
@@ -39,7 +39,8 @@
                             <p>
                                 {{item.desc}}
                             </p>
-                            <v-footer>
+                            <v-footer class="v-footer" style="background: none; float: right;margin-top:auto;">
+                                <p class="pa-1 socmed" style="margin-top: 6%">Social Media :</p>
                                 <v-btn
                                         v-for="(icon,i) in icons"
                                         :key="i"
@@ -47,7 +48,7 @@
                                         class="mx-4"
                                 v-bind:href="items.urlIG">
                                     <v-img width="24px"
-                                           :src="icon.icon"></v-img>
+                                           :src="icon.icon" class="icon-btn"></v-img>
                                 </v-btn>
                             </v-footer>
                         </v-col>
@@ -78,7 +79,8 @@
                 },
                 {
                     nama: "Edward Agustria",
-                    npm: "1822250010",
+                    npm: "1822250021",
+                    desc:"BELI SEPATU DI @MEVVAHSTUFF.ID",
                     foto: require("../assets/profile/titi.jpeg")
                 },
                 {
@@ -128,16 +130,26 @@
     * {
         color: white;
     }
-
+    .socmed{
+        font-family: "Century Gothic";
+    }
+    .icon-btn{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        border-radius: 10px;
+    }
+    .img-profile{
+        border-radius: 8px;
+    }
     .content-1 {
-        background-color: purple
+        background-color: #8500cc
     }
 
     .rounded-card {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         border-radius: 10px;
+        padding: 20px;
     }
-
     #tes {
-        background-color: #1976D2
+        background-color: #1976D2;
     }
 </style>

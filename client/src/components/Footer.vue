@@ -24,7 +24,10 @@
     }
 </script>
 <style scoped>
+    *{
+        font-family: "Century Gothic";
+    }
     .tes{
-        border-radius:10px;
+        border-radius:8px;
     }
 </style>
