@@ -114,7 +114,7 @@ export default {
               npm:"1822250010",
               foto:require("../assets/profile/bagas.jpeg"),
               desc:'terakhir tesnya',
-              colors:'#3F51B5'
+              colors:'#1976D2'
             }
 
         ],
