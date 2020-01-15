@@ -41,7 +41,14 @@
                      {{item.desc}}
                    </p>
                    <v-footer>
-                     tes
+                     <v-btn 
+                     v-for="(icon,i) in icons"
+                     :key="i"
+                     icon
+                     class="mx-4">
+                      <v-img width="24px" 
+                      :src="icon.icon"></v-img>
+                     </v-btn>
                    </v-footer>
                   </v-col>
                 </v-row>
@@ -53,10 +60,11 @@
      </v-container>
 </template>
 <script>
+
 export default {
+
     name:'Content',
     data:()=>({
-
         items:[
             {
                 nama:"Carvel Saputra Martaloho",
@@ -69,7 +77,19 @@ export default {
               npm:"1822250010",
               foto:require("../assets/logo.png")
             }
+        ],
+        icons:[
+          {
+            icon:require("../assets/sosmed/instagram.png")
+          },
+          {
+            icon:require("../assets/sosmed/facebook.png")
+          }
+
         ]
+          
+        
+
     })
 }
 </script>
