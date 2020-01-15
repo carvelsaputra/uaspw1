@@ -7,11 +7,11 @@
               outlined
               tile
               center
-              v-for="(item,id) in items"
-              :key="id"
+              v-for="(item,i) in items"
+              :key="i"
             >
 
-              <v-col id="tes" v-bind:style="{color:colorCard}">
+              <v-col id="tes" v-bind:style="{backgroundColor:item.colors}">
                 <v-row>
                   <!-- kolom kiri -->
                   <v-col cols="4">
@@ -62,7 +62,6 @@
      </v-container>
 </template>
 <script>
-
 export default {
     name:'Content',
     data:()=>({
@@ -73,37 +72,49 @@ export default {
               nama:"Carvel Saputra Martaloho",
               npm:"1822250008",
               foto:require("../assets/profile/CarvelSaputraMartaLoho.jpg"),
-              desc:"Halo, saya Carvel Saputra Martaloho prodi TI angkatan 2018.. saya lahir di Palembang, SD di Xaverius 4, SMP Xaverius Maria, dan SMA di Xaverius 3"
+              desc:"Halo, saya Carvel Saputra Martaloho prodi TI angkatan 2018.. saya lahir di Palembang, SD di Xaverius 4, SMP Xaverius Maria, dan SMA di Xaverius 3",
+              colors:'#3F51B5'
+
             },
             {
               id:2,
               nama:"Jonathan Tanuwijaya",
               npm:"1822250010",
-              foto:require("../assets/logo.png")
+              foto:require("../assets/logo.png"),
+              desc:'tes',
+              colors:'#FB8C00'
             },
             {
               id:3,
               nama:"Edward Agustria",
               npm:"1822250010",
-              foto:require("../assets/profile/titi.jpeg")
+              foto:require("../assets/profile/titi.jpeg"),
+              desc:'tes bro',
+              colors:'#C2185B'
             },
             {
               id:4,
               nama:"Ricky Yohannes",
               npm:"1822250010",
-              foto:require("../assets/profile/ricky.jpeg")
+              foto:require("../assets/profile/ricky.jpeg"),
+              desc:'tes lagi',
+              colors:'#EF5350'
             },
             {
               id:5,
               nama:"Richardo Anggara",
               npm:"1822250010",
-              foto:require("../assets/profile/dodo.jpeg")
+              foto:require("../assets/profile/dodo.jpeg"),
+              desc:'tes terus',
+              colors:'#6200EA'
             },
             {
               id:6,
               nama:"Refaldy Bagas Riyanto",
               npm:"1822250010",
-              foto:require("../assets/profile/bagas.jpeg")
+              foto:require("../assets/profile/bagas.jpeg"),
+              desc:'terakhir tesnya',
+              colors:'#3F51B5'
             }
 
         ],
@@ -115,7 +126,6 @@ export default {
           {
             icon:require("../assets/sosmed/facebook.png")
           }
-
         ],
       
           
@@ -137,10 +147,10 @@ export default {
 {
     border-radius:10px;
 }
-#tes
+/* #tes
 {
   background-color: #1976D2
-}
+} */
 
 
 </style>
