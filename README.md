@@ -2,7 +2,7 @@
 # uaspw1 
  ### Tugas Akhir UAS Pemrograman Web 1
 
-#Cara Penggunaan
+# Cara Penggunaan
  ##### Saat pertama kali akan menggunakan project ini diharapkan terlebih dahulu menginstal semua dependencies pada directory client dan server dengan perintah 
    ```
    npm install
@@ -31,13 +31,13 @@
   ```
 ### 2) Secara langsung
    
-   #####Setelah menginstal dependecies pada root project ( diluar folder server dan client ) 
-   #####kita cukup menjalankan project ini dengan perintah
+   ##### Setelah menginstal dependecies pada root project ( diluar folder server dan client ) 
+   ##### kita cukup menjalankan project ini dengan perintah
  
    ```
    npm start
    ```
 ##
-####note : 
-#####1. Server backend (express) berjalan pada port 8081 ( http://localhost:8081/)
-#####2. Server frontend (frontend) berjalan pada port 8080 ( http://localhost:8080/)
+#### note : 
+##### 1. Server backend (express) berjalan pada port 8081 ( http://localhost:8081/)
+##### 2. Server frontend (frontend) berjalan pada port 8080 ( http://localhost:8080/)
