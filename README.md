@@ -34,10 +34,15 @@
    
    ##### Setelah menginstal dependecies pada root project ( diluar folder server dan client ) 
    ##### kita cukup menjalankan project ini dengan perintah
- 
+
+   ```
+   npm install
+   ```
+   untuk menginstal dependency yang diperlukan 
    ```
    npm start
    ```
+   untuk menjalankan server project
 ##
 #### note : 
 ##### 1. Server backend (express) berjalan pada port 8081 ( http://localhost:8081/)
