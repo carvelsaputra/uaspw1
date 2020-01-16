@@ -7,6 +7,7 @@
    ```
    npm install
    ```  
+ ### Untuk menjalankan server terdapat 2 cara yang dapat dilakukan   
  ### 1) Menjalan server secara terpisah  
  ##### Dengan cara ini berarti kita akan menjalankan server frontend dan backend di terminal yang berbeda dan dengan 2 perintah yang berbeda.
  
