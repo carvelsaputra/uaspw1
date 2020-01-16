@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "nama": "Carvel Saputra Marthaloho",
+    "npm": "1822250008",
+    "desc": "Halo, saya Carvel Saputra Martaloho prodi TI angkatan 2018.. saya lahir di Palembang, SD di Xaverius 4, SMP Xaverius Maria, dan SMA di Xaverius 3",
+    "foto": "profile/CarvelSaputraMartaLoho.jpg",
+    "urlIG": "https://www.instagram.com/carvel.saputra/",
+    "colors": "#3F51B5"
+  },
+  {
+    "id": 2,
+    "nama": "Jonathan Tanuwijaya",
+    "npm": "1822250010",
+    "desc": "Saya Jonathan Tanuwijaya prodi TI angkatan 2018. Saya pernah bersekolah di SD Xaverius 2, SMP Xaverius 6, dan SMA Xaverius 1 ",
+    "foto": "profile/bagas.jpeg",
+    "urlIG": "https://www.instagram.com/jonathan_tw8/",
+    "colors": "#FB8C00"
+  },
+  {
+    "id": 3,
+    "nama": "Edward Agustria",
+    "npm": "1822250021",
+    "desc": "Saya edward",
+    "foto":"profile/titi.jpeg",
+    "urlIG": "https://www.instagram.com/carvel.saputra/",
+    "colors": "#C2185B"
+  },
+  {
+    "id": 4,
+    "nama": "Ricky Yohannes",
+    "npm": "1822250028",
+    "desc": "Saya Ricky",
+    "foto": "profile/ricky.jpeg",
+    "urlIG": "https://www.instagram.com/carvel.saputra/",
+    "colors": "#EF5350"
+  },
+  {
+    "id": 5,
+    "nama": "Richardo Anggara",
+    "npm": "1822250030",
+    "desc": "Saya Richardo",
+    "foto": "profile/dodo.jpeg",
+    "urlIG": "https://www.instagram.com/carvel.saputra/",
+    "colors": "#6200EA"
+  },
+  {
+    "id": 6,
+    "nama": "Refaldy Bagas Riyanto",
+    "npm": "1822250008",
+    "desc": "Saya Refalddy",
+    "foto": "profile/bagas.jpeg",
+    "urlIG": "https://www.instagram.com/carvel.saputra/",
+    "colors": "#1976D2"
+  }
+]

@@ -25,12 +25,12 @@ import Footer from './components/Footer';
 export default {
   name: 'App',
 
-  components: 
+  components:
   {
     Navbar,Carousel,Content,Footer
   },
- 
- 
+
+
 };
 </script>
 <style scoped>
