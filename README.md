@@ -46,4 +46,4 @@
 ##
 #### note : 
 ##### 1. Server backend (express) berjalan pada port 8081 ( http://localhost:8081/)
-##### 2. Server frontend (frontend) berjalan pada port 8080 ( http://localhost:8080/)
+##### 2. Server frontend (vue) berjalan pada port 8080 ( http://localhost:8080/)
