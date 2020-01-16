@@ -15,7 +15,7 @@
                     <v-row>
                         <!-- kolom kiri -->
                         <v-col cols="4">
-                            <v-img height="300" width="200" :src="'http://localhost:8081/'+item.foto"/>
+                            <v-img class="img-profile" height="300" width="250" :src="'http://localhost:8081/'+item.foto"/>
                         </v-col>
                         <!-- kolom kanan -->
                         <v-col>
@@ -40,17 +40,17 @@
                             <p>
                                 {{item.desc}}
                             </p>
-                            <v-footer class="rounded-card" color="green accent-1">
-                                <p class="title" style="color:#00E676">Social Media : </p>
+                             <v-footer class="v-footer rounded-card" style="float: right;margin-top:auto;height:20%;">
+                                <p class="pa-1 socmed">Social Media :</p>
                                 <v-btn
-                                        v-for="(icon,i) in icons"
-                                        :key="i"
-                                        icon
-                                        class="mx-4">
+                                v-for="(icon,i) in icons"
+                                :key="i"
+                                icon
+                                class="mx-4 btn-sosmed">
 
-                                    <v-img width="30px"
-                                           :src="icon.icon" class="mx-4"/>
-                                    <v-divider vertical/>
+                                <v-img width="30px"
+                                :src="icon.icon" class="icon-btn mx-3"></v-img>
+                                <!-- <v-divider  vertical ></v-divider> -->
                                 </v-btn>
                             </v-footer>
                         </v-col>
@@ -96,22 +96,39 @@
     }
 </script>
 <style scoped>
-    * {
+    *
+    {
         color: white;
     }
-
+    .img-profile
+    {
+       border-radius: 8px;
+    }
+    .icon-btn
+    {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        border-radius: 7px;
+    }
+    .btn-sosmed
+    {
+        margin-top: -15px;
+    }
+    .socmed
+    {
+        color:black;
+        font-family: "Century Gothic";
+    }
     .content-1 {
         background-color: purple
     }
 
-    .rounded-card {
+    .rounded-card
+    {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         border-radius: 10px;
+        padding: 20px;
     }
 
-    /* #tes
-    {
-      background-color: #1976D2
-    } */
 
 
 </style>
