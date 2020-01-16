@@ -15,7 +15,7 @@
                     <v-row>
                         <!-- kolom kiri -->
                         <v-col cols="4">
-                            <v-img height="300" width="200" :src="'http://localhost:8081/'+item.foto"></v-img>
+                            <v-img height="300" width="200" :src="'http://localhost:8081/'+item.foto"/>
                         </v-col>
                         <!-- kolom kanan -->
                         <v-col>
@@ -49,8 +49,8 @@
                                         class="mx-4">
 
                                     <v-img width="30px"
-                                           :src="icon.icon" class="mx-4"></v-img>
-                                    <v-divider vertical></v-divider>
+                                           :src="icon.icon" class="mx-4"/>
+                                    <v-divider vertical/>
                                 </v-btn>
                             </v-footer>
                         </v-col>
