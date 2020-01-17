@@ -15,7 +15,8 @@
                     <v-row>
                         <!-- kolom kiri -->
                         <v-col cols="4">
-                            <v-img height="300" width="200" :src="'http://localhost:8081/'+item.foto"></v-img>
+                            <v-img class="img-profile" height="300" width="250"
+                                   :src="'http://localhost:8081/'+item.foto"/>
                         </v-col>
                         <!-- kolom kanan -->
                         <v-col>
@@ -40,17 +41,26 @@
                             <p>
                                 {{item.desc}}
                             </p>
-                            <v-footer class="rounded-card" color="green accent-1">
-                                <p class="title" style="color:#00E676">Social Media : </p>
+                            <v-footer class="v-footer rounded-card" style="float: right;margin-top:auto;height:20%;">
+                                <p class="pa-1 socmed">Social Media :</p>
                                 <v-btn
-                                        v-for="(icon,i) in icons"
-                                        :key="i"
-                                        icon
-                                        class="mx-4">
-
+                                        v-for="(link, link_key) in item.url.sosmed"
+                                        :key="link_key"
+                                        v-on:click="direct(link.src)"
+                                        depressed
+                                        class="btn-sosmed"
+                                >
                                     <v-img width="30px"
-                                           :src="icon.icon" class="mx-4"></v-img>
-                                    <v-divider vertical></v-divider>
+                                           v-if="link.name === 'instagram'"
+                                           :src="require('../assets/sosmed/instagram.png')">
+
+                                    </v-img>
+                                    <v-img width="30px"
+                                           v-if="link.name === 'facebook' "
+                                           :src="require('../assets/sosmed/facebook.png')"
+                                    >
+
+                                    </v-img>
                                 </v-btn>
                             </v-footer>
                         </v-col>
@@ -69,18 +79,14 @@
         data: () => ({
             items:
                 [],
-            icons:
-                [
-                    {
-                        icon: require("../assets/sosmed/instagram.png")
-                    },
-                    {
-                        icon: require("../assets/sosmed/facebook.png")
-                    }
-                ],
-
-
         }),
+
+        methods: {
+            direct(link) {
+                window.location.assign(link)
+            }
+        },
+
         created() {
             axios
                 .get("http://localhost:8081/")
@@ -100,18 +106,28 @@
         color: white;
     }
 
+    .img-profile {
+        border-radius: 8px;
+    }
+
+    .btn-sosmed {
+        margin-top: -22px;
+    }
+
+    .socmed {
+        color: black;
+        font-family: "Century Gothic";
+    }
+
     .content-1 {
         background-color: purple
     }
 
     .rounded-card {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
         border-radius: 10px;
+        padding: 20px;
     }
-
-    /* #tes
-    {
-      background-color: #1976D2
-    } */
 
 
 </style>

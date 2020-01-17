@@ -9,7 +9,7 @@
             </v-toolbar-items>
         </v-app-bar>
       </div>
-     
+
 </template>
 
 <script>
@@ -21,7 +21,8 @@ export default {
 </script>
 
 <style>
- *{
-        font-family: "Century Gothic";
-    }
+ *
+{
+    font-family: "Century Gothic";
+}
 </style>
