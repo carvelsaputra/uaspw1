@@ -42,14 +42,16 @@
                             </p>
                              <v-footer class="v-footer rounded-card" style="float: right;margin-top:auto;height:20%;">
                                 <p class="pa-1 socmed">Social Media :</p>
-                                <v-btn 
-                                v-for="(icon,i) in icons"
-                                :key="i"
-                                icon
-                                class="mx-4 btn-sosmed">
+                                <v-btn class="mx-4 btn-sosmed">
                                 
                                 <v-img width="30px" 
-                                :src="icon.icon" class="icon-btn mx-3"></v-img>
+                                :src="ig.icon" class="icon-btn mx-3"></v-img>
+                                <!-- <v-divider  vertical ></v-divider> -->
+                                </v-btn>
+                                  <v-btn class="mx-4 btn-sosmed">
+                                
+                                <v-img width="30px" 
+                                :src="fb.icon" class="icon-btn mx-3"></v-img>
                                 <!-- <v-divider  vertical ></v-divider> -->
                                 </v-btn>
                             </v-footer>
@@ -69,15 +71,16 @@
         data: () => ({
             items:
                 [],
-            icons:
-                [
-                    {
-                        icon: require("../assets/sosmed/instagram.png")
-                    },
-                    {
-                        icon: require("../assets/sosmed/facebook.png")
-                    }
-                ],
+            ig:{
+                icon: require("../assets/sosmed/instagram.png")
+            },
+            fb:{
+            
+                icon: require("../assets/sosmed/facebook.png")
+            }
+    
+            
+                  
 
 
         }),
@@ -112,6 +115,7 @@
     .btn-sosmed
     {
         margin-top: -15px;
+        width: 10px;
     }
     .socmed
     {
