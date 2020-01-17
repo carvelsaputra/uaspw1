@@ -44,19 +44,23 @@
                             <v-footer class="v-footer rounded-card" style="float: right;margin-top:auto;height:20%;">
                                 <p class="pa-1 socmed">Social Media :</p>
                                 <v-btn
-                                        v-for="(icon,i) in icons"
-                                        :key="i"
-                                        icon
-                                        v-bind:href="item.url"
-                                        class="mx-4 btn-sosmed"
+                                        v-for="(link, link_key) in item.url.sosmed"
+                                        :key="link_key"
+                                        v-on:click="direct(link.src)"
+                                        depressed
+                                        class="btn-sosmed"
                                 >
+                                    <v-img width="30px"
+                                           v-if="link.name === 'instagram'"
+                                           :src="require('../assets/sosmed/instagram.png')">
 
-                                    <v-img
-                                            width="30px"
-                                            :src="icon.icon" class="icon-btn mx-3"
+                                    </v-img>
+                                    <v-img width="30px"
+                                           v-if="link.name === 'facebook' "
+                                           :src="require('../assets/sosmed/facebook.png')"
+                                    >
 
-                                    />
-                                    <!--                                     <v-divider  vertical ></v-divider>-->
+                                    </v-img>
                                 </v-btn>
                             </v-footer>
                         </v-col>
@@ -75,22 +79,14 @@
         data: () => ({
             items:
                 [],
-            icons:
-                [
-                    {
-                        icon: require("../assets/sosmed/instagram.png"),
-
-
-                    },
-                    {
-                        icon: require("../assets/sosmed/facebook.png"),
-
-
-                    }
-                ],
-
-
         }),
+
+        methods: {
+            direct(link) {
+                window.location.assign(link)
+            }
+        },
+
         created() {
             axios
                 .get("http://localhost:8081/")
@@ -114,13 +110,8 @@
         border-radius: 8px;
     }
 
-    .icon-btn {
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-        border-radius: 7px;
-    }
-
     .btn-sosmed {
-        margin-top: -15px;
+        margin-top: -22px;
     }
 
     .socmed {
