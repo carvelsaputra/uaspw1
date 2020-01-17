@@ -1,9 +1,11 @@
 {
   "name": "uaspw1",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "npm": "^6.13.6"
+  },
   "scripts": {
-    "start":  "concurrently \"cd server && npm start\" \"cd client && npm run serve\""
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm run serve\""
   },
   "devDependencies": {
     "concurrently": "^5.0.2"

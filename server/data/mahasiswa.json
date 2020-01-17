@@ -69,11 +69,11 @@
       "sosmed": [
         {
           "name": "instagram",
-          "src": "https://www.instagram.com/carvel.saputra/"
+          "src": "https://www.instagram.com/ricky.yohannes/"
         },
         {
           "name": "facebook",
-          "src": "https://web.facebook.com/carvel.saputra"
+          "src": "https://web.facebook.com/"
         }
       ]
     },
@@ -83,17 +83,17 @@
     "id": 5,
     "nama": "Richardo Anggara",
     "npm": "1822250030",
-    "desc": "Saya Richardo",
+    "desc": "Halo, Richardo anggara prodi TI angkatan 2018. saya lahir di Palembang, SD di Xaverius 1, SMP Xaverius Maria, dan SMA di Xaverius 1 hobby saya adalah limit testing",
     "foto": "profile/dodo.jpeg",
     "url": {
       "sosmed": [
         {
           "name": "instagram",
-          "src": "https://www.instagram.com/carvel.saputra/"
+          "src": "https://www.instagram.com/richardo_anggara/"
         },
         {
           "name": "facebook",
-          "src": "https://web.facebook.com/carvel.saputra"
+          "src": "https://web.facebook.com/richardo.ang"
         }
       ]
     },
