@@ -47,11 +47,13 @@
                                         v-for="(icon,i) in icons"
                                         :key="i"
                                         icon
-                                        class="mx-4 btn-sosmed">
+                                        v-bind:href="item.url"
+                                        class="mx-4 btn-sosmed"
+                                >
 
                                     <v-img
                                             width="30px"
-                                           :src="icon.icon" class="icon-btn mx-3"
+                                            :src="icon.icon" class="icon-btn mx-3"
 
                                     />
                                     <!--                                     <v-divider  vertical ></v-divider>-->
@@ -76,10 +78,14 @@
             icons:
                 [
                     {
-                        icon: require("../assets/sosmed/instagram.png")
+                        icon: require("../assets/sosmed/instagram.png"),
+
+
                     },
                     {
-                        icon: require("../assets/sosmed/facebook.png")
+                        icon: require("../assets/sosmed/facebook.png"),
+
+
                     }
                 ],
 
