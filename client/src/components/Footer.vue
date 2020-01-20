@@ -5,15 +5,16 @@
         <v-card
                 flat
                 tile
-                class=" white--text text-center tes"
+                class="white--text text-center tes justify-center"
+                :style="{left: '50%', transform:'translateX(-50%)'}"
         >
-            <v-card-text class="white--text pt-0">
-                Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            <v-card-text class="white--text pt-3">
+                <p class="title">Kebersamaan adalah permulaan. Menjaga bersama adalah kemajuan. Bekerja bersama adalah keberhasilan.</p>
             </v-card-text>
             <v-divider></v-divider>
 
             <v-card-text class="white--text">
-                {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+               <p class="text-right subtitle-1"> — <strong>Henry Ford</strong></p>
             </v-card-text>
         </v-card>
     </v-footer>

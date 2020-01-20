@@ -1,5 +1,5 @@
 <template>
-    <v-container class="content-1 rounded-card">
+    <v-container class="content-1 rounded-card" id="about">
         <v-row>
             <v-card
                     width="100%"
@@ -9,6 +9,7 @@
                     center
                     v-for="(item,i) in items"
                     :key="i"
+                   
             >
 
                 <v-col id="tes" v-bind:style="{backgroundColor:item.colors}">
