@@ -19,7 +19,7 @@ const getDataFromFile = cb => {
 };
 
 module.exports = {
-    getAll(cb) {
+  getAll(cb) {
         getDataFromFile(cb);
     }
 

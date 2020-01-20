@@ -1,5 +1,5 @@
 <template>
-    <v-container class="content-1 rounded-card">
+    <v-container class="content-1 rounded-card" id="about">
         <v-row>
             <v-card
                     width="100%"
@@ -9,6 +9,7 @@
                     center
                     v-for="(item,i) in items"
                     :key="i"
+                   
             >
 
                 <v-col id="tes" v-bind:style="{backgroundColor:item.colors}">
@@ -42,16 +43,14 @@
                             </p>
                              <v-footer class="v-footer rounded-card" style="float: right;margin-top:auto;height:20%;">
                                 <p class="pa-1 socmed">Social Media :</p>
-                                <v-btn class="mx-4 btn-sosmed">
+                                <v-btn 
+                                v-for="(icon,i) in icons"
+                                :key="i"
+                                icon
+                                class="mx-4 btn-sosmed">
                                 
                                 <v-img width="30px" 
-                                :src="ig.icon" class="icon-btn mx-3"></v-img>
-                                <!-- <v-divider  vertical ></v-divider> -->
-                                </v-btn>
-                                  <v-btn class="mx-4 btn-sosmed">
-                                
-                                <v-img width="30px" 
-                                :src="fb.icon" class="icon-btn mx-3"></v-img>
+                                :src="icon.icon" class="icon-btn mx-3"></v-img>
                                 <!-- <v-divider  vertical ></v-divider> -->
                                 </v-btn>
                             </v-footer>
@@ -71,16 +70,15 @@
         data: () => ({
             items:
                 [],
-            ig:{
-                icon: require("../assets/sosmed/instagram.png")
-            },
-            fb:{
-            
-                icon: require("../assets/sosmed/facebook.png")
-            }
-    
-            
-                  
+            icons:
+                [
+                    {
+                        icon: require("../assets/sosmed/instagram.png")
+                    },
+                    {
+                        icon: require("../assets/sosmed/facebook.png")
+                    }
+                ],
 
 
         }),
@@ -115,7 +113,6 @@
     .btn-sosmed
     {
         margin-top: -15px;
-        width: 10px;
     }
     .socmed
     {
